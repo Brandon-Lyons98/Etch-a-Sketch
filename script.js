@@ -1,18 +1,23 @@
 const container = document.querySelector('#container');
+const clear = document.querySelector('#button');
 
 function makeSquareBoxes() {
-    const box = document.createElement('div');
-    box.classList.add('box');
-    box.addEventListener('mouseover', () => {
+    const boxes = document.createElement('div');
+    boxes.classList.add('box');
+    boxes.addEventListener('mouseover', () => {
         let a = randomizeBoxColor();
         let b = randomizeBoxColor();
         let c = randomizeBoxColor();
         
-        box.style.backgroundColor = 'black';
-        //box.style.backgroundColor = "rgb("+ a +","+ b +","+ c +")";
+        boxes.style.backgroundColor = 'black';
+        //boxes.style.backgroundColor = "rgb("+ a +","+ b +","+ c +")";
     });
 
-    container.appendChild(box);
+    clear.addEventListener('click', () => {
+        boxes.style.backgroundColor = 'white';
+    });
+    
+    container.appendChild(boxes);
 }
 
 for (let i = 0; i <= 15; i++) {

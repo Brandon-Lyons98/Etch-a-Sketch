@@ -2,13 +2,19 @@
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(16, 50px);
 }
 
 .box {
-    padding: 0px;
-    width: 40px;
-    height: 40px;
+    padding: 14px;
+    width: 20px;
+    height: 20px;
     border: 1px solid black;
     cursor: pointer;
+}
+
+button {
+    height: 40px;
+    border-radius: 5px;
 }
