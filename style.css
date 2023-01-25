@@ -1,0 +1,14 @@
+#container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(16, 50px);
+}
+
+.box {
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+}
