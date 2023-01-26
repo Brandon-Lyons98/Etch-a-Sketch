@@ -7,7 +7,19 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
-        <div id="container"></div>
-        <button id="button">Clear board</button>
+        <div id="buttons">
+            <button id="black">Black</button>
+            <button id="rainbow">Rainbow</button>
+            <div id="colorPrompt">
+                <input type="color" id="color">
+                <p>Choose a color</p>
+            </div>
+            <div id="sliderAndValue">
+                <input type="range" min="2" max="100" value="16" id="slider">
+                <p class="value">16</p>
+            </div>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="grid"></div>
     </body>
 </html>
