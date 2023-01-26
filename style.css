@@ -1,3 +1,12 @@
+body {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76, 133, 162);
+}
+
 #container {
     display: grid;
     flex-wrap: wrap;
@@ -14,7 +23,46 @@
     cursor: pointer;
 }
 
-button {
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     height: 40px;
     border-radius: 5px;
+}
+
+.grid {
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
+    background-color: gray;
+    box-shadow: 10px 10px;
+}
+
+.cell{
+    background-color: white;
+    border: 1px solid black;
+}
+
+#colorPrompt,
+#sliderAndValue {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#colorPrompt {
+    height: 15px;
+    width: 100px;
+}
+
+#color {
+    width: 50px;
 }
